@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./stayel.css">
+    <title>Document</title>
+</head>
+<body style="background-color: green;">
+    <div class="header">
+        <div class="logs">
+            <div class="log"> </div>
+        </div>
+        
+        <ul class="list1">
+            <li>
+                <a href="./page1.html">link-1</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./subpage1.html">Sub Link 1</a></li>
+                    <li><a href="./subpage2.html">Sub Link 2</a></li>
+                    <li><a href="./subpage3.html">Sub Link 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./page2.html">link-2</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./subpage1.html">Sub Link 1</a></li>
+                    <li><a href="./subpage2.html">Sub Link 2</a></li>
+                    <li><a href="./subpage3.html">Sub Link 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./page3.html">link-3</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./subpage1.html">Sub Link 1</a></li>
+                    <li><a href="./subpage2.html">Sub Link 2</a></li>
+                    <li><a href="./subpage3.html">Sub Link 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./page4.html">link-4</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./subpage1.html">Sub Link 1</a></li>
+                    <li><a href="./subpage2.html">Sub Link 2</a></li>
+                    <li><a href="./subpage3.html">Sub Link 3</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+        
+            
+        <div class="responsive-menu" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="list2" style="display: none;">
+                <li><a href="./page1.html">link-1</a></li>
+                <ul class="dropdown-menu">
+                    <li><a href="./subpage1.html">Sub Link 1</a></li>
+                    <li><a href="./subpage2.html">Sub Link 2</a></li>
+                    <li><a href="./subpage3.html">Sub Link 3</a></li>
+                </ul>
+                <li><a href="./page2.html">link-2</a></li>
+                <ul class="dropdown-menu">
+                    <li><a href="./subpage1.html">Sub Link 1</a></li>
+                    <li><a href="./subpage2.html">Sub Link 2</a></li>
+                    <li><a href="./subpage3.html">Sub Link 3</a></li>
+                </ul>
+                <li><a href="./page3.html">link-3</a></li>
+                <ul class="dropdown-menu">
+                    <li><a href="./subpage1.html">Sub Link 1</a></li>
+                    <li><a href="./subpage2.html">Sub Link 2</a></li>
+                    <li><a href="./subpage3.html">Sub Link 3</a></li>
+                </ul>
+                <li><a href="./page4.html">link-4</a></li>
+                <ul class="dropdown-menu">
+                    <li><a href="./subpage1.html">Sub Link 1</a></li>
+                    <li><a href="./subpage2.html">Sub Link 2</a></li>
+                    <li><a href="./subpage3.html">Sub Link 3</a></li>
+                </ul>
+            </ul>
+        </div>
+        
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('.list2');
+                menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+            }
+        </script>
+    
+    
+    </div>
+
+</body>
+</html>
